@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+app:
+  qdrant:
+    host: http://localhost:6333
+    collection: news
+  openai:
+    apiKey: ${OPENAI_API_KEY:}
+    embeddingModel: text-embedding-3-small
+    chatModel: gpt-4o-mini
